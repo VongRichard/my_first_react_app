@@ -1,23 +1,27 @@
-import logo from './logo.svg';
 import './App.css';
 
-function App() {
+// Component
+
+const Person = () => {
+  return (
+    <>
+    <h1>Name: John</h1>
+    <h2>Last Name: Doe</h2>
+    <h2>Age: 30</h2>
+    </>
+  )
+}
+
+// Functional Component
+// Arrow Functions are more popular than regular Function Declaration.
+const App = () => {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          {2 + 2}
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+        <Person />
+        <Person />
+        <Person />
+        <Person />
+        <Person />
     </div>
   );
 }
